@@ -29,8 +29,8 @@ $list = g::posts( array(
 			$content = cut_str($list[$i]['wr_content'], 100, '...');
 		} 
 		else {
-			if ( $i == 0 ) $img = x::url()."widget/$widget_config[name]/img/default_banner1.png";
-			else if ( $i == 1 ) $img = x::url()."widget/$widget_config[name]/img/default_banner2.png";
+			if ( $i == 0 ) $img = $widget_config['url']."/img/default_banner1.png";
+			else if ( $i == 1 ) $img = $widget_config['url']."/img/default_banner2.png";
 			
 			$url = "javascript:void(0);";
 			$subject = "회원님께서는 현재";
@@ -66,7 +66,7 @@ $list = g::posts( array(
 			
 		}
 		else {
-			$img = x::url()."widget/$widget_config[name]/img/default_banner3.png";
+			$img = $widget_config['url']."/img/default_banner3.png";
 			$url = "javascript:void(0);";
 			$subject = "회원님께서는 현재";
 			$content = "갤러리 테마 No.2를 사용하고 계십니다.";
