@@ -29,12 +29,11 @@ $list = g::posts( array(
 			$content = cut_str($list[$i]['wr_content'], 100, '...');
 		} 
 		else {
-			if ( $i == 0 ) $img = $widget_config['url']."/img/default_banner1.png";
-			else if ( $i == 1 ) $img = $widget_config['url']."/img/default_banner2.png";
+			$img = $widget_config['url']."/img/default_image.png";		
 			
 			$url = "javascript:void(0);";
-			$subject = "회원님께서는 현재";
-			$content = "갤러리 테마 No.2를 사용하고 계십니다.";
+			$subject = "No Post Available";
+			$content = "This Forums has no posts available";
 			
 		}
 	?>
@@ -66,10 +65,10 @@ $list = g::posts( array(
 			
 		}
 		else {
-			$img = $widget_config['url']."/img/default_banner3.png";
+			$img = $widget_config['url']."/img/default_image_bottom.png";
 			$url = "javascript:void(0);";
-			$subject = "회원님께서는 현재";
-			$content = "갤러리 테마 No.2를 사용하고 계십니다.";
+			$subject = "No Post Available";
+			$content = "This Forums has no posts available";
 		}
 	?>
 	

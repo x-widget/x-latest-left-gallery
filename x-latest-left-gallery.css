@@ -95,5 +95,11 @@
 	width: 478px;
 	height: 128px;
 }
+/*hover effects*/
+.top-posts:hover .top-posts-container{
+	display:block;	
+}
 
-
+.bottom-post:hover .bottom-posts-container{
+	display:block;	
+}
